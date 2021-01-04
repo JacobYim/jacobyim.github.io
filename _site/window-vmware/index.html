@@ -1,0 +1,571 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.21.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="ko" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Window에 VMWare 설치하기 - Jacob Yim Blog</title>
+<meta name="description" content="VMWare 설치파일 다운로드 하기 VMWare 설치 링크에서 VMWare설치파일을 내려받는다.">
+
+
+  <meta name="author" content="Junghwan Yim">
+  
+  <meta property="article:author" content="Junghwan Yim">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:site_name" content="Jacob Yim Blog">
+<meta property="og:title" content="Window에 VMWare 설치하기">
+<meta property="og:url" content="http://localhost:4000/window-vmware/">
+
+
+  <meta property="og:description" content="VMWare 설치파일 다운로드 하기 VMWare 설치 링크에서 VMWare설치파일을 내려받는다.">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2021-01-05T00:00:00+09:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/window-vmware/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "Junghwan Yim",
+      "url": "http://localhost:4000/"
+    
+  }
+</script>
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Jacob Yim Blog Feed">
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
+
+<!--[if IE]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <h2 class="screen-reader-text">Skip links</h2>
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+          <a class="site-logo" href="/"><img src="/assets/images/88x88.png" alt=""></a>
+        
+        <a class="site-title" href="/">
+          Keep Think and Get Insprations
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/categories/">Categories</a>
+            </li><li class="masthead__menu-item">
+              <a href="/tags/">Tags</a>
+            </li><li class="masthead__menu-item">
+              <a href="/about/">About</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">토글 메뉴</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+  
+    
+
+
+
+<nav class="breadcrumbs">
+  <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+    
+    
+    
+      
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="http://localhost:4000/" itemprop="item"><span itemprop="name">Home</span></a>
+          <meta itemprop="position" content="1" />
+        </li>
+        <span class="sep">/</span>
+      
+      
+        <li class="current">Window에 VMWare 설치하기</li>
+      
+    
+  </ol>
+</nav>
+
+  
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person">
+
+  
+
+  <div class="author__content">
+    
+      <h3 class="author__name" itemprop="name">Junghwan Yim</h3>
+    
+    
+      <div class="author__bio" itemprop="description">
+        <p>Keep Thinking &amp; Do Inspration <br /> 실천하는 개발자</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">팔로우</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name">Republic of Korea</span>
+        </li>
+      
+
+      
+        
+          
+        
+          
+            <li><a href="https://jacobyim.github.io/" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-link" aria-hidden="true"></i><span class="label">Website</span></a></li>
+          
+        
+          
+            <li><a href="https://www.facebook.com/jacobyimjh" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-facebook-square" aria-hidden="true"></i><span class="label">Facebook</span></a></li>
+          
+        
+          
+            <li><a href="https://github.com/JacobYim" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
+          
+        
+          
+            <li><a href="https://www.instagram.com/junghwanyim/" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-instagram" aria-hidden="true"></i><span class="label">Instagram</span></a></li>
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Window에 VMWare 설치하기">
+    <meta itemprop="description" content="VMWare 설치파일 다운로드 하기VMWare 설치 링크에서 VMWare설치파일을 내려받는다.">
+    <meta itemprop="datePublished" content="2021-01-05T00:00:00+09:00">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">Window에 VMWare 설치하기
+</h1>
+          
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          최대 1 분 소요
+        
+      </span>
+    
+  </p>
+
+
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+        <h2 id="vmware-설치파일-다운로드-하기">VMWare 설치파일 다운로드 하기</h2>
+<p><a href="https://www.vmware.com/go/getworkstation-win">VMWare 설치 링크</a>에서 <code class="language-plaintext highlighter-rouge">VMWare</code>설치파일을 내려받는다.</p>
+
+<h2 id="ubuntu-desktop-iso-다운로드-하기-ubuntu-server-iso-아님">Ubuntu Desktop ISO 다운로드 하기 (Ubuntu Server ISO 아님)</h2>
+<p><a href="https://releases.ubuntu.com/20.04.1/ubuntu-20.04.1-desktop-amd64.iso?_ga=2.132610958.1672075639.1609768425-1497128947.16097684">Ubuntu Desktop ISO 다운 링크</a> 에서  <code class="language-plaintext highlighter-rouge">Ubuntu 20 Desktop ISO</code> 을 다운로드 받는다.</p>
+
+<h2 id="vmware-설치하기">VMWare 설치하기</h2>
+<p><code class="language-plaintext highlighter-rouge">VMWare-workstation-full-16.1.0-17198959.exe</code>기본으로 설정되어 있는 그대로 <code class="language-plaintext highlighter-rouge">Next</code>를 눌러서 설치를 진행한다.</p>
+
+<p><code class="language-plaintext highlighter-rouge">Activation Key</code>를 구해서 넣고,  <code class="language-plaintext highlighter-rouge">Next</code>를 누르면 설치가 완료된다.</p>
+
+<p>이후, 아래 버튼을 눌러서 새로운 가상머신을 만들기를 시작한다.
+<img src="/assets/images/KORUB/1/1" alt="1" /></p>
+
+<p>기본 Typical로 설정을 해주고 Next를 누른다.
+<img src="/assets/images/KORUB/1/2" alt="2" /></p>
+
+<p>Browse를 눌러 이전에 다운 받았던, Ubuntu iso file를 선택한다.
+<img src="/assets/images/KORUB/1/3" alt="3" />
+<img src="/assets/images/KORUB/1/4" alt="4" /></p>
+
+<p>우분투에서 사용할 아이디와 비밀번호를 입력한다. 띄여쓰기 없이 입력해준다.
+<img src="/assets/images/KORUB/1/5" alt="5" /></p>
+
+<p>가상머신의 이름을 설정해준다.
+<img src="/assets/images/KORUB/1/6" alt="6" /></p>
+
+<p>넉넉하게  하드디스크 용량을 50GB로 설정해주고,  나중에 복구하기 쉬운 <code class="language-plaintext highlighter-rouge">Split virtual disk into multiple files</code>로 설정한 뒤 Next를 누른다. 
+<img src="/assets/images/KORUB/1/7" alt="7" /></p>
+
+<p><code class="language-plaintext highlighter-rouge">Customize Hardware ...</code>를 눌러서 메모리 용량을 최대한 8GB까지 올려준다. (너무 적으면 속터진다. 돌리고 있는 컴퓨터(Host) 메모리 용량이 얼마 되지 않는다면  Recommand라고 되어있는데로 둔다. 만약 Host의 메모리가 모자라면, 이 또한 성능저하의 원인이 된다.)
+<img src="/assets/images/KORUB/1/8" alt="8" />
+<img src="/assets/images/KORUB/1/9" alt="9" /></p>
+
+<p>이후, Next를 누르면 가상머신이 생성된다. 자동으로 실행되며, 이후 Ubuntu 운영체제가 설치된다.</p>
+
+<p><img src="/assets/images/KORUB/1/10" alt="10" /></p>
+
+<p><img src="/assets/images/KORUB/1/11" alt="11" />으로 전체화면으로 설정할 수 있다.</p>
+
+<p>아래 화면이 뜨면 설치가 완료된 것이다.
+<img src="/assets/images/KORUB/1/12" alt="12" /></p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> 태그: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="/tags/#korub" class="page__taxonomy-item" rel="tag">#KORUB</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/tags/#linux" class="page__taxonomy-item" rel="tag">#linux</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/tags/#ubuntu" class="page__taxonomy-item" rel="tag">#ubuntu</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/tags/#vmware" class="page__taxonomy-item" rel="tag">#vmware</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/tags/#window" class="page__taxonomy-item" rel="tag">#window</a>
+    
+    </span>
+  </p>
+
+
+
+
+        
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 업데이트:</strong> <time datetime="2021-01-05T00:00:00+09:00">January 5, 2021</time></p>
+
+
+      </footer>
+
+      <section class="page__share">
+  
+    <h4 class="page__share-title">공유하기</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?text=Window%EC%97%90+VMWare+%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0%20http%3A%2F%2Flocalhost%3A4000%2Fwindow-vmware%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fwindow-vmware%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Fwindow-vmware%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/vmware-ubuntu/" class="pagination--pager" title="VMWare Ubuntu 작업환경 세팅하기
+">이전</a>
+    
+    
+      <a href="#" class="pagination--pager disabled">다음</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h4 class="page__related-title">참고</h4>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="/assets/images/500x300.png" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/vmware-ubuntu/" rel="permalink">VMWare Ubuntu 작업환경 세팅하기
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          1 분 소요
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Ubuntu는 apt과  snap라는 패키지 매니저가 있다. 이 패키지 매니저를 통해서 여러가지 필요한 패키지 및 프로그램들을 다운받을 수 있다.
+</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>팔로우:</strong></li>
+    
+
+    
+      
+        
+          <li><a href="https://www.facebook.com/jacobyimjh" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-facebook-square" aria-hidden="true"></i> Facebook</a></li>
+        
+      
+        
+          <li><a href="https://github.com/JacobYim" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+          <li><a href="https://www.instagram.com/junghwanyim/" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-instagram" aria-hidden="true"></i> Instagram</a></li>
+        
+      
+    
+
+    <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> 피드</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2021 Junghwan Yim. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

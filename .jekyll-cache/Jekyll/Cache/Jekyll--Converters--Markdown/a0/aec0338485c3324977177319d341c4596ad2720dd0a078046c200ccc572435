@@ -1,0 +1,29 @@
+I"(	<p>기본 Typical로 설정을 해주고 Next를 누른다.
+[image:458C38C1-90EA-44C7-A62F-F299626C14FF-458-00002DBB0DE81B7C/F6746C4B-2009-4750-9D68-6BFDE3A46CA0.png]</p>
+
+<p>Browse를 눌러 이전에 다운 받았던, Ubuntu iso file를 선택한다.
+[image:8618FA6B-9EB3-4BFC-8DDD-7F3E5C0F5295-458-00002DCA7B5F6309/EAA6284A-0B02-4E8D-9DD5-7374FF0C6157.png]
+[image:80A51084-D95C-4FB3-AD23-59DC8962E6F7-458-00002DC597CE59DE/0A729DEC-5426-4CCB-8B53-E2D19C1BF334.png]</p>
+
+<p>우분투에서 사용할 아이디와 비밀번호를 입력한다. 띄여쓰기 없이 입력해준다.
+[image:15FBFA19-7DFC-4CC5-B692-D604B72C5B58-458-00002DD395154C12/7B773328-498C-4F04-8387-897202AD567E.png]</p>
+
+<p>가상머신의 이름을 설정해준다.
+[image:5FE29C7C-7521-49C8-A74F-4AFE2F1134B8-458-00002DE58C2D702E/12B76BF7-8D05-4B33-9562-E907E2174337.png]</p>
+
+<p>넉넉하게  하드디스크 용량을 50GB로 설정해주고,  나중에 복구하기 쉬운 <code class="language-plaintext highlighter-rouge">Split virtual disk into multiple files</code>로 설정한 뒤 Next를 누른다. 
+[image:46F4E73F-1F1E-4278-8006-167D5C79408D-458-00002DF40474BE5B/A5911BDE-70C9-4E5C-9E49-4BF63C3B4D54.png]</p>
+
+<p><code class="language-plaintext highlighter-rouge">Customize Hardware ...</code>를 눌러서 메모리 용량을 최대한 8GB까지 올려준다. (너무 적으면 속터진다. 돌리고 있는 컴퓨터(Host) 메모리 용량이 얼마 되지 않는다면  Recommand라고 되어있는데로 둔다. 만약 Host의 메모리가 모자라면, 이 또한 성능저하의 원인이 된다.)
+[image:3FC32AB1-49DE-4A2C-AB85-20F76DBB698A-458-00002E0780351094/360337A8-738B-4F00-96EB-F8F2E5A8DAE1.png]</p>
+
+<p>[image:C393A004-43AA-4D10-B7EC-239AC6DC5BD6-458-00002E023C6BE524/D5D79B72-C4A5-4107-8B66-904148858AAC.png]</p>
+
+<p>이후, Next를 누르면 가상머신이 생성된다. 자동으로 실행되며, 이후 Ubuntu 운영체제가 설치된다.</p>
+
+<p>[image:76C4102C-FDFA-4BCC-88D8-AB926865002D-458-00002E13B16F0F92/89C51A5C-7D94-4AF0-BB54-9E056A0632F7.png]</p>
+
+<p>[image:405A2382-794C-4569-960B-C9A62EDFDF87-458-000030AE8897EC12/BD45A3C5-11F9-43E4-8443-A5D327ED186A.png]으로 전체화면으로 설정할 수 있다.</p>
+
+<p>[image:B64426FF-DBD5-4709-AEC3-F6C711F7B611-458-00003248A71253BC/2A8BC145-5679-4EEB-AA90-E20D2864426B.png]</p>
+:ET

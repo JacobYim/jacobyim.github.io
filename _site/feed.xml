@@ -1,1 +1,88 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-01-05T05:52:18+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Jacob Yim Blog</title><subtitle>This is a blog recording of Jacob's tries and errors.</subtitle><author><name>Junghwan Yim</name></author></feed>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-01-05T06:31:42+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Jacob Yim Blog</title><subtitle>This is a blog recording of Jacob's tries and errors.</subtitle><author><name>Junghwan Yim</name></author><entry><title type="html">VMWare Ubuntu 작업환경 세팅하기</title><link href="http://localhost:4000/vmware-ubuntu/" rel="alternate" type="text/html" title="VMWare Ubuntu 작업환경 세팅하기" /><published>2021-01-05T00:00:00+09:00</published><updated>2021-01-05T00:00:00+09:00</updated><id>http://localhost:4000/vmware-ubuntu</id><content type="html" xml:base="http://localhost:4000/vmware-ubuntu/">&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Ubuntu&lt;/code&gt;는 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;apt&lt;/code&gt;과  &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;snap&lt;/code&gt;라는 패키지 매니저가 있다. 이 패키지 매니저를 통해서 여러가지 필요한 패키지 및 프로그램들을 다운받을 수 있다.&lt;/p&gt;
+
+&lt;p&gt;바탕화면에서 마우스 왼쪽키를 클릭한 후, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Open Terminal&lt;/code&gt;를 눌러 터미널을 열어준다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/KORUB/2/1&quot; alt=&quot;1&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;update-하기&quot;&gt;Update 하기&lt;/h2&gt;
+&lt;p&gt;아래와 같은 창이 뜬다면 
+&lt;img src=&quot;/assets/images/KORUB/2/2&quot; alt=&quot;2&quot; /&gt;
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Install Now&lt;/code&gt;를 눌러 업데이트 해준다.&lt;/p&gt;
+
+&lt;p&gt;만약 안뜨면,  아까 열어둔 터미널에&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt update
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;를 실행시키면 같은 역할을 한다.&lt;/p&gt;
+
+&lt;p&gt;이 업데이트를 안하면, 종종 내가 찾는 패키지를 찾을 수 없다는 에러들을 볼 수 있다.&lt;/p&gt;
+
+&lt;p&gt;또 위에 창에서 이미 실행을 했는데, 또 터미널을 열어서 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sudo apt update&lt;/code&gt;를 실행하면, 이미 어떤 프로그램이 사용중이라는 에러를 볼 수 있다.&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;jacob@ubuntu:~/Desktop$ sudo apt update
+[sudo] password for jacob: 
+Reading package lists... Done
+E: Could not get lock /var/lib/apt/lists/lock. It is held by process 5682 (aptd)
+N: Be aware that removing the lock file is not a solution and may break your system.
+E: Unable to lock directory /var/lib/apt/lists/
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;그러니 하나만 하고 인내심을 갖고 기다리자.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/KORUB/2/3&quot; alt=&quot;3&quot; /&gt;를 눌러보면,&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/KORUB/2/4&quot; alt=&quot;4&quot; /&gt;와 같이 진행상황을 볼 수 있다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/KORUB/2/5&quot; alt=&quot;5&quot; /&gt;
+위와 같이 뜨면 설치가 완료된거다.&lt;/p&gt;
+
+&lt;h2 id=&quot;upgrade-하기-옵션&quot;&gt;Upgrade 하기 (옵션)&lt;/h2&gt;
+&lt;p&gt;패키지 매니저와 있는 패키지를 업그레이드하는데, 용량을 많이 쓴다. 용량일 부족하면 스킵해도 좋다.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt upgrade -y # 용량부족하면 스킵
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;추가적인-프로그램-설치하기&quot;&gt;추가적인 프로그램 설치하기&lt;/h2&gt;
+&lt;p&gt;Git과 vscode는 필수적이므로 설치를 한다면, 아래 코드로 설치할 수 있다.&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt install -y git # -y 는 설치할 때 yes or not 뭍는거에 yes라고 자동으로 대답해 주는 태그
+
+sudo snap install code —classic # vscode 설치함
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Junghwan Yim</name></author><category term="#window" /><category term="#ubuntu" /><category term="#vmware" /><category term="#linux" /><category term="#KORUB" /><summary type="html">Ubuntu는 apt과 snap라는 패키지 매니저가 있다. 이 패키지 매니저를 통해서 여러가지 필요한 패키지 및 프로그램들을 다운받을 수 있다.</summary></entry><entry><title type="html">Window에 VMWare 설치하기</title><link href="http://localhost:4000/window-vmware/" rel="alternate" type="text/html" title="Window에 VMWare 설치하기" /><published>2021-01-05T00:00:00+09:00</published><updated>2021-01-05T00:00:00+09:00</updated><id>http://localhost:4000/window-vmware</id><content type="html" xml:base="http://localhost:4000/window-vmware/">&lt;h2 id=&quot;vmware-설치파일-다운로드-하기&quot;&gt;VMWare 설치파일 다운로드 하기&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.vmware.com/go/getworkstation-win&quot;&gt;VMWare 설치 링크&lt;/a&gt;에서 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;VMWare&lt;/code&gt;설치파일을 내려받는다.&lt;/p&gt;
+
+&lt;h2 id=&quot;ubuntu-desktop-iso-다운로드-하기-ubuntu-server-iso-아님&quot;&gt;Ubuntu Desktop ISO 다운로드 하기 (Ubuntu Server ISO 아님)&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://releases.ubuntu.com/20.04.1/ubuntu-20.04.1-desktop-amd64.iso?_ga=2.132610958.1672075639.1609768425-1497128947.16097684&quot;&gt;Ubuntu Desktop ISO 다운 링크&lt;/a&gt; 에서  &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Ubuntu 20 Desktop ISO&lt;/code&gt; 을 다운로드 받는다.&lt;/p&gt;
+
+&lt;h2 id=&quot;vmware-설치하기&quot;&gt;VMWare 설치하기&lt;/h2&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;VMWare-workstation-full-16.1.0-17198959.exe&lt;/code&gt;기본으로 설정되어 있는 그대로 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Next&lt;/code&gt;를 눌러서 설치를 진행한다.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Activation Key&lt;/code&gt;를 구해서 넣고,  &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Next&lt;/code&gt;를 누르면 설치가 완료된다.&lt;/p&gt;
+
+&lt;p&gt;이후, 아래 버튼을 눌러서 새로운 가상머신을 만들기를 시작한다.
+&lt;img src=&quot;/assets/images/KORUB/1/1&quot; alt=&quot;1&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;기본 Typical로 설정을 해주고 Next를 누른다.
+&lt;img src=&quot;/assets/images/KORUB/1/2&quot; alt=&quot;2&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Browse를 눌러 이전에 다운 받았던, Ubuntu iso file를 선택한다.
+&lt;img src=&quot;/assets/images/KORUB/1/3&quot; alt=&quot;3&quot; /&gt;
+&lt;img src=&quot;/assets/images/KORUB/1/4&quot; alt=&quot;4&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;우분투에서 사용할 아이디와 비밀번호를 입력한다. 띄여쓰기 없이 입력해준다.
+&lt;img src=&quot;/assets/images/KORUB/1/5&quot; alt=&quot;5&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;가상머신의 이름을 설정해준다.
+&lt;img src=&quot;/assets/images/KORUB/1/6&quot; alt=&quot;6&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;넉넉하게  하드디스크 용량을 50GB로 설정해주고,  나중에 복구하기 쉬운 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Split virtual disk into multiple files&lt;/code&gt;로 설정한 뒤 Next를 누른다. 
+&lt;img src=&quot;/assets/images/KORUB/1/7&quot; alt=&quot;7&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Customize Hardware ...&lt;/code&gt;를 눌러서 메모리 용량을 최대한 8GB까지 올려준다. (너무 적으면 속터진다. 돌리고 있는 컴퓨터(Host) 메모리 용량이 얼마 되지 않는다면  Recommand라고 되어있는데로 둔다. 만약 Host의 메모리가 모자라면, 이 또한 성능저하의 원인이 된다.)
+&lt;img src=&quot;/assets/images/KORUB/1/8&quot; alt=&quot;8&quot; /&gt;
+&lt;img src=&quot;/assets/images/KORUB/1/9&quot; alt=&quot;9&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;이후, Next를 누르면 가상머신이 생성된다. 자동으로 실행되며, 이후 Ubuntu 운영체제가 설치된다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/KORUB/1/10&quot; alt=&quot;10&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/KORUB/1/11&quot; alt=&quot;11&quot; /&gt;으로 전체화면으로 설정할 수 있다.&lt;/p&gt;
+
+&lt;p&gt;아래 화면이 뜨면 설치가 완료된 것이다.
+&lt;img src=&quot;/assets/images/KORUB/1/12&quot; alt=&quot;12&quot; /&gt;&lt;/p&gt;</content><author><name>Junghwan Yim</name></author><category term="#window" /><category term="#ubuntu" /><category term="#vmware" /><category term="#linux" /><category term="#KORUB" /><summary type="html">VMWare 설치파일 다운로드 하기 VMWare 설치 링크에서 VMWare설치파일을 내려받는다.</summary></entry></feed>
