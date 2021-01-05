@@ -6,7 +6,9 @@ tags:
 - "#vmware"
 - "#linux"
 - "#KORUB"
-categories: []
+date:
+- '2021-01-05 01:41:43'
+image: assets/images/KORUB/1/1
 ---
 
 `Ubuntu`는 `apt`과  `snap`라는 패키지 매니저가 있다. 이 패키지 매니저를 통해서 여러가지 필요한 패키지 및 프로그램들을 다운받을 수 있다.

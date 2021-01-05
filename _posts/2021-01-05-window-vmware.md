@@ -6,7 +6,9 @@ tags:
 - "#vmware"
 - "#linux"
 - "#KORUB"
-categories: []
+date:
+- '2021-01-05 01:42:21'
+image: assets/images/KORUB/1/5
 ---
 
 ## VMWare 설치파일 다운로드 하기

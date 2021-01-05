@@ -10,4 +10,10 @@ var store = [{
         "tags": ["#window","#ubuntu","#vmware","#linux","#KORUB"],
         "url": "http://localhost:4000/window-vmware/",
         "teaser": "http://localhost:4000/assets/images/500x300.png"
+      },{
+        "title": "맥에서 아수스 젠스크린 사용하기",
+        "excerpt":"아수스 젠스크린 (포터블 모니터)를 구해서 기존에 사용하던 맥북과 연결하려고 합니다. 처음엔 맥북과 직접 USB로 연결을 해도 안 뜨는데요. 드라이버를 설치해줘야합니다 MB16AC Driver &amp; Tools | 모니터 | ASUS 한국 위 링크에서 제 운영체제인 맥을 설정해서 다운로드를 받아서 더블 클릭해서 압축을 해제해 줍니다. 이후 보이는 DisplayLink Manager App 1.1.pkg를 열면, 설치가...","categories": [],
+        "tags": ["ASUS","portable","monitor","포터블","모니터","맥북","아수스","세로모드"],
+        "url": "http://localhost:4000/",
+        "teaser": "http://localhost:4000/assets/images/500x300.png"
       }]
