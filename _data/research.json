@@ -21,8 +21,8 @@
   },
   {
     "id": "seetraceact",
-    "title": "SeeTraceAct: Grounding Vision-Language-Action Models with One-Shot Video Demonstrations via Visual Latent Planning",
-    "authors_html": "",
+    "title": "SeeTraceAct: Visibility-Aware Latent Planning from Cross-Embodiment Demonstration Videos",
+    "authors_html": "Jaehyeon Son, Junhyun Kim, Kyle Kam, Jinhoo Kim, Seok Joon Kim, <b>Junghwan Yim</b>, Zsolt Kira",
     "venue": "SCALE Workshop @ ICML 2026",
     "summary": "Learning a visual latent plan from a single demonstration video to guide spatially precise robot actions.",
     "image": "/assets/research/seetraceact.png",
