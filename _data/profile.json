@@ -1,0 +1,18 @@
+{
+  "name": "Junghwan Yim",
+  "name_ko": "임정환",
+  "affiliation": "Ph.D. Student · Georgia Institute of Technology",
+  "email": "dlagudah@gmail.com",
+  "github": "https://github.com/JacobYim",
+  "linkedin": "https://www.linkedin.com/in/junghwanyim",
+  "bio_html": [
+    "I am a Ph.D. researcher working on <b>agentic digital twins and robotics security</b>. My goal is to develop methods that translate into working systems and solve practical problems.",
+    "I am interested in how autonomous systems can understand physical conditions, reason about what may happen next, and act reliably under uncertainty and security threats. In particular, I study ways to connect sensing, simulation, and decision-making through digital twins.",
+    "My previous work includes biometric authentication using physiological and vibration signals, radar-based hardware-fault diagnosis, and battery capacity prediction. I aim to connect methodological contributions with implementation and evaluation, including the conditions under which a method works and its limitations."
+  ],
+  "interests": [
+    "Agentic digital twins for connecting physical observations with simulation and decision-making.",
+    "Robotics security and reliable operation under uncertain or compromised inputs.",
+    "Methods evaluated through implemented systems and physical experiments."
+  ]
+}

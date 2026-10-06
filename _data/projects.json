@@ -1,0 +1,29 @@
+[
+  {
+    "date": "Mar – May 2021",
+    "category": "Autonomous driving",
+    "title": "Reinforcement learning agents in CARLA",
+    "summary": "Autonomous driving agents using DQN and A2C in the CARLA simulator, with synchronous and asynchronous simulation environments.",
+    "tools": "CARLA · DQN · A2C",
+    "details_label": "",
+    "details": ""
+  },
+  {
+    "date": "Feb – May 2021",
+    "category": "Natural language processing",
+    "title": "Rumour detection with BERT and GCN",
+    "summary": "A model for classifying discussion stances and detecting rumours in Twitter and Reddit data from RumourEval 2019. The project combines BERT with a three-layer graph convolutional network.",
+    "tools": "BERT · Graph convolutional networks · RumourEval 2019",
+    "details_label": "Project results",
+    "details": "Reported results: 67% accuracy for stance classification and 70% for rumour detection. Selected as the best study in the Advanced Natural Language Processing class."
+  },
+  {
+    "date": "Feb 2022",
+    "category": "Applied data analysis",
+    "title": "Music NFTs and audience engagement",
+    "summary": "A Measure of Music conference project examining music NFT releases using Chartmetric data. The analysis considered Shawn Mendes and Tory Lanez releases alongside follower and streaming trends.",
+    "tools": "Chartmetric · Music analytics · Measure of Music 2022",
+    "details_label": "Findings & limitations",
+    "details": "The analysis did not establish a direct relationship between the selected NFT releases and follower or streaming changes. Available metrics limited the conclusions that could be drawn about their impact."
+  }
+]

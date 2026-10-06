@@ -1,0 +1,106 @@
+[
+  {
+    "id": "battery-meta-learning",
+    "title": "Cross-Chemistry Meta-Learning with Frequency-Domain Augmentation for Robust Capacity Retention Prediction in Vanadium Redox Flow Batteries",
+    "authors_html": "Young-Dae Shim, <b>Junghwan Yim</b>, Nian Liu, Cheong Hoon Kwon, Hae-Jin Choi, Seung-Kyum Choi",
+    "venue": "IEEE Access, 2026",
+    "summary": "Cross-chemistry meta-learning and frequency-domain augmentation for predicting capacity retention in vanadium redox flow batteries.",
+    "image": "",
+    "caption": "",
+    "links": [
+      {
+        "label": "Paper / DOI",
+        "url": "https://doi.org/10.1109/ACCESS.2026.3737729"
+      },
+      {
+        "label": "IEEE Xplore",
+        "url": "https://ieeexplore.ieee.org/document/11711182"
+      }
+    ],
+    "details": ""
+  },
+  {
+    "id": "seetraceact",
+    "title": "SeeTraceAct: Grounding Vision-Language-Action Models with One-Shot Video Demonstrations via Visual Latent Planning",
+    "authors_html": "",
+    "venue": "SCALE Workshop @ ICML 2026",
+    "summary": "Learning a visual latent plan from a single demonstration video to guide spatially precise robot actions.",
+    "image": "/assets/research/seetraceact.png",
+    "caption": "Method overview · official SeeTraceAct project page",
+    "links": [
+      {
+        "label": "OpenReview",
+        "url": "https://openreview.net/forum?id=xZbOwW72u5"
+      },
+      {
+        "label": "Project & demos",
+        "url": "https://jaehyeon-son.github.io/seetraceact/"
+      },
+      {
+        "label": "Code",
+        "url": "https://github.com/jaehyeon-son/SeeTraceAct"
+      }
+    ],
+    "details": "The workshop paper studies one-shot demonstration-conditioned robot policies and evaluates the approach in RoboCasa. The linked project page presents the related arXiv version and its figures; the publication title here follows the OpenReview workshop version."
+  },
+  {
+    "id": "rad-r",
+    "title": "Rad-R: A Raw-ADC Radar Dataset and Capture-Invariant SSM for Hardware-Fault Diagnosis",
+    "authors_html": "Mainak Mallick, <b>Junghwan Yim</b>, Alankrit Gupta, Seung-Kyum Choi",
+    "venue": "arXiv preprint, 2026",
+    "summary": "A dataset of controlled radar hardware faults, paired with physical measurements, and a state space model for diagnosis across capture conditions.",
+    "image": "/assets/research/rad-r.png",
+    "caption": "Vehicle deployment and sensing hardware · Rad-R, Figure 1",
+    "links": [
+      {
+        "label": "Paper",
+        "url": "https://arxiv.org/abs/2608.30896"
+      },
+      {
+        "label": "Full text",
+        "url": "https://arxiv.org/html/2608.30896v2"
+      }
+    ],
+    "details": "The dataset records controlled faults such as vibration, antenna misalignment, blockage, and receive-channel degradation. Evaluation distinguishes within-clip performance from cross-severity generalization. The current dataset is single-session, so its generalization claims are limited to the controlled protocol."
+  },
+  {
+    "id": "vibpath",
+    "title": "VibPath: Two-Factor Authentication with Your Hand’s Vibration Response to Unlock Your Phone",
+    "authors_html": "Seokmin Choi, <b>Junghwan Yim</b>, Se Jun Kim, Yincheng Jin, Di Wu, Zhanpeng Jin",
+    "venue": "Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies (IMWUT), 2023",
+    "summary": "Using vibration responses between the hand and wrist to authenticate a user while they enter a passcode.",
+    "image": "/assets/research/vibpath.png",
+    "caption": "Experimental setup · Seokmin Choi’s research page",
+    "links": [
+      {
+        "label": "Paper",
+        "url": "https://doi.org/10.1145/3610894"
+      },
+      {
+        "label": "Research page",
+        "url": "https://richardchoism.github.io/research/vibpath/"
+      }
+    ],
+    "details": "An attention-based encoder–decoder models individual vibration responses. The study evaluates authentication with 30 participants, together with permanence, vulnerability, usability, and system-overhead studies."
+  },
+  {
+    "id": "earppg",
+    "title": "EarPPG: Securing Your Identity with Your Ears",
+    "authors_html": "Seokmin Choi, <b>Junghwan Yim</b>, Yincheng Jin, Yang Gao, Jiyang Li, Zhanpeng Jin",
+    "venue": "ACM International Conference on Intelligent User Interfaces (IUI), 2023",
+    "summary": "User authentication through in-ear photoplethysmography signals shaped by individual speaking behavior.",
+    "image": "/assets/research/earppg.png",
+    "caption": "Research overview · Seokmin Choi’s research page",
+    "links": [
+      {
+        "label": "Paper",
+        "url": "https://doi.org/10.1145/3581641.3584070"
+      },
+      {
+        "label": "Research page",
+        "url": "https://richardchoism.github.io/research/earppg/"
+      }
+    ],
+    "details": "EarPPG combines physiological and behavioral signals in a learned authentication model. Evaluation includes 25 participants and experiments involving movement, occlusion, lighting, and permanence."
+  }
+]

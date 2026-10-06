@@ -1,6 +1,6 @@
 ---
 layout: splash
-permalink: /
+permalink: /theme-demo/
 hidden: true
 header:
   overlay_color: "#5e616c"
