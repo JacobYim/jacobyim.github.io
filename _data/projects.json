@@ -6,7 +6,52 @@
     "summary": "At SK C&C, I supported the design, construction, and automation of Ford–SK On’s BlueOval SK battery manufacturing facilities in the United States, connecting factory software with equipment and production workflows.",
     "tools": "PLC · Machine vision · Robotics · 3D inspection · Simulation",
     "details_label": "Engineering work",
-    "details": "My work included automation software, PLC and vision integration, robotics, and the use of drawings, 3D inspection, and simulation to support implementation. Working with physical equipment and production constraints shaped my interest in digital representations that remain useful on the factory floor."
+    "details": "My work included automation software, PLC and vision integration, robotics, and the use of drawings, 3D inspection, and simulation to support implementation. Working with physical equipment and production constraints shaped my interest in digital representations that remain useful on the factory floor.",
+    "id": "blueoval-sk",
+    "scale_heading": "Engineering at gigafactory scale",
+    "scale_intro": "Kentucky described BlueOval SK Battery Park as the largest economic development project in the state’s history in 2022. Its scale gives context to my work connecting software, equipment, and production processes.",
+    "metrics": [
+      {
+        "value": "$5.8B",
+        "label": "Announced investment"
+      },
+      {
+        "value": "1,500",
+        "label": "Acres of campus"
+      },
+      {
+        "value": "5,000",
+        "label": "Planned jobs"
+      },
+      {
+        "value": ">80 GWh",
+        "label": "Planned annual capacity"
+      }
+    ],
+    "scale_note": "Kentucky Battery Park figures reported in 2022–2023; investment and planned campus capacity, not individual performance metrics or current production.",
+    "press": [
+      {
+        "publisher": "Kentucky Governor’s Office",
+        "date": "Dec 5, 2022",
+        "title": "Kentucky’s largest economic development project",
+        "summary": "The state’s announcement details the $5.8 billion investment, 1,500-acre campus, and 5,000 planned jobs.",
+        "url": "https://content.govdelivery.com/accounts/KYGOV/bulletins/33b95fa"
+      },
+      {
+        "publisher": "Kentucky Cabinet for Economic Development",
+        "date": "Aug 9, 2023",
+        "title": "Two plants, each approximately 4 million square feet",
+        "summary": "A construction update documents nearly 2,600 onsite construction workers and plans for more than 80 GWh of annual battery capacity.",
+        "url": "https://newkentuckyhome.ky.gov/Newsroom/NewsPage/20230809_BlueOvalSK_Update"
+      },
+      {
+        "publisher": "Axios",
+        "date": "Sep 27, 2021",
+        "title": "Ford leads $11 billion plan for electric vehicle manufacturing",
+        "summary": "Coverage of the broader Tennessee–Kentucky manufacturing investment.",
+        "url": "https://www.axios.com/2021/09/27/ford-electric-vehicle-manufacturing-kentucky-tennessee"
+      }
+    ]
   },
   {
     "date": "Mar – May 2021",
