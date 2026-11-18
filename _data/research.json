@@ -21,16 +21,20 @@
   },
   {
     "id": "seetraceact",
-    "title": "SeeTraceAct: Visibility-Aware Latent Planning from Cross-Embodiment Demonstration Videos",
+    "title": "SeeTraceAct: Grounding Vision-Language-Action Models with One-Shot Video Demonstrations via Visual Latent Planning",
     "authors_html": "Jaehyeon Son, Junhyun Kim, Kyle Kam, Jinhoo Kim, Seok Joon Kim, <b>Junghwan Yim</b>, Zsolt Kira",
-    "venue": "SCALE Workshop @ ICML 2026",
+    "venue": "SCALE Workshop at ICML 2026",
     "summary": "Learning a visual latent plan from a single demonstration video to guide spatially precise robot actions.",
     "image": "/assets/research/seetraceact.png",
     "caption": "Method overview · official SeeTraceAct project page",
     "links": [
       {
-        "label": "OpenReview",
+        "label": "Workshop paper",
         "url": "https://openreview.net/forum?id=xZbOwW72u5"
+      },
+      {
+        "label": "ICML workshop listing",
+        "url": "https://icml.cc/virtual/2026/67393"
       },
       {
         "label": "Project & demos",
@@ -41,7 +45,7 @@
         "url": "https://github.com/jaehyeon-son/SeeTraceAct"
       }
     ],
-    "details": "The workshop paper studies one-shot demonstration-conditioned robot policies and evaluates the approach in RoboCasa. The linked project page presents the related arXiv version and its figures; the publication title here follows the OpenReview workshop version."
+    "details": "The ICML workshop listing describes one-shot demo-conditioned VLAs with auxiliary future visual trace supervision and evaluation on RoboCasa benchmarks. The title shown here follows the official ICML workshop listing."
   },
   {
     "id": "rad-r",
